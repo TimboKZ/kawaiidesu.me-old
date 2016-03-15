@@ -1,14 +1,14 @@
 {
-  "name": "timbo-kz",
+  "name": "js-gaussian-eliniation",
   "version": "1.0.0",
-  "description": "timbo.kz Prototype",
+  "description": "Gaussian elimination javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TimboKZ/kawaiidesu.me.git"
+    "url": "git+https://github.com/TimboKZ/JS-Gaussian-Elimination.git"
   },
   "keywords": [
     "gaussian",
@@ -18,9 +18,9 @@
   "author": "Timur Kuzhagaliyev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TimboKZ/kawaiidesu.me/issues"
+    "url": "https://github.com/TimboKZ/JS-Gaussian-Elimination/issues"
   },
-  "homepage": "https://github.com/TimboKZ/kawaiidesu.me#readme",
+  "homepage": "https://github.com/TimboKZ/JS-Gaussian-Elimination#readme",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",

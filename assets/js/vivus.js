@@ -1011,4 +1011,6 @@
         window.Vivus = Vivus;
     }
 
-}(window, document));
+}(window, document));/**
+ * Created by Timur Kuzhagaliyev on 15/03/2016.
+ */

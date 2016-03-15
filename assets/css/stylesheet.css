@@ -1,0 +1,124 @@
+/*! timbo.kz core stylesheet (https://github.com/timbokz/kawaiidesu.me)
+ * copyright (c) 2016 timur kuzhagaliyev (timbokz) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.pseudo:before, .pseudo:after {
+  position: absolute;
+  display: block;
+  content: ''; }
+
+html, body, #wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+body {
+  background-color: #f2f2f2;
+  overflow: hidden; }
+
+#sidebar {
+  box-shadow: inset #fff 50px 100px 100px -100px;
+  border-right: solid 1px #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 301px;
+  position: relative;
+  height: 100%;
+  bottom: 100%;
+  float: left; }
+  #sidebar #logo {
+    opacity: 0; }
+  #sidebar h1, #sidebar p {
+    padding: 20px; }
+  #sidebar h1 {
+    font-family: "source-sans-pro", sans-serif;
+    color: #444;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 3em; }
+    #sidebar h1 span {
+      color: #ccc;
+      font-weight: normal; }
+
+#content {
+  margin: 0 0 0 301px;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  height: 100%; }
+
+.core-item {
+  border: solid 1px #ddd;
+  background-color: #fff;
+  box-shadow: #eaeaea 0 0 20px;
+  height: 210px;
+  width: 300px;
+  opacity: 0; }
+  .core-item-wrapper {
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative; }
+  .core-item-line {
+    background-color: #ddd;
+    height: 1px;
+    width: 1px;
+    position: absolute; }
+    .core-item-line-top, .core-item-line-bottom {
+      width: 0; }
+    .core-item-line-left, .core-item-line-right {
+      height: 0; }
+    .core-item-line-top {
+      top: 20px; }
+    .core-item-line-right, .core-item-line-bottom {
+      right: 20px; }
+    .core-item-line-bottom, .core-item-line-left {
+      bottom: 20px; }
+    .core-item-line-left {
+      left: 20px; }
+  .core-item-thumbnail {
+    height: 90px;
+    width: 90px;
+    position: relative;
+    margin: -45px 0 0 -45px;
+    left: 50%;
+    top: 50%; }
+    .core-item-thumbnail .cls-1 {
+      stroke-miterlimit: 10;
+      stroke: transparent;
+      stroke-width: 1px;
+      fill: none; }

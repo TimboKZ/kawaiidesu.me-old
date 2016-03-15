@@ -1,10 +1,15 @@
 var gulp = require('gulp');
+function swallowError (error) {
+    console.log(error.toString());
+    this.emit('end');
+}
 
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 gulp.task('sass', function () {
     return gulp.src('src/sass/**/*.sass')
         .pipe(sass())
+        .on('error', swallowError)
         .pipe(autoprefixer())
         .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.reload({

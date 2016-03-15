@@ -1,0 +1,103 @@
+/*! timbo.kz core stylesheet (https://github.com/timbokz/kawaiidesu.me)
+ * copyright (c) 2016 timur kuzhagaliyev (timbokz)
+
+@import "partials/_variables"
+@import "partials/_mixins"
+@import "partials/reset"
+
+// Stuff for :before and :after
+.pseudo
+  &:before, &:after
+    position: absolute
+    display: block
+    content: ''
+
+html, body, #wrapper
+  position: relative
+  height: 100%
+  width: 100%
+
+body
+  background-color: $core-background
+  overflow: hidden
+
+#sidebar
+  box-shadow: inset $core-foreground 50px 100px 100px -100px
+  border-right: solid $border-width $core-border
+  padding: $core-padding
+  box-sizing: border-box
+  width: $sidebar-width
+  position: relative
+  height: 100%
+  bottom: 100%
+  float: left
+
+  #logo
+    opacity: 0
+
+  h1, p
+    padding: $core-padding
+
+  h1
+    font-family: "source-sans-pro", sans-serif
+    color: $core-text-primary
+    letter-spacing: 3px
+    font-weight: lighter
+    text-align: center
+    font-size: 3em
+    span
+      color: $core-text-secondary
+      font-weight: normal
+
+#content
+  margin: 0 0 0 $sidebar-width
+  box-sizing: border-box
+  padding: $core-padding
+  overflow-y: scroll
+  overflow-x: hidden
+  position: relative
+  height: 100%
+
+.core-
+  &item
+    &-wrapper
+      box-sizing: border-box
+      padding: $core-padding
+      display: inline-block
+      vertical-align: top
+      position: relative
+    &-line
+      background-color: $core-border
+      height: $border-width
+      width: $border-width
+      position: absolute
+      &-top, &-bottom
+        width: 0
+      &-left, &-right
+        height: 0
+      &-top
+        top: $core-padding
+      &-right, &-bottom
+        right: $core-padding
+      &-bottom, &-left
+        bottom: $core-padding
+      &-left
+        left: $core-padding
+    &-thumbnail
+      height: $core-item-thumbnail-size
+      width: $core-item-thumbnail-size
+      position: relative
+      margin: (-$core-item-thumbnail-size / 2) 0 0 (-$core-item-thumbnail-size / 2)
+      left: 50%
+      top: 50%
+      .cls-1
+        stroke-miterlimit: 10
+        stroke: transparent
+        stroke-width: 1px
+        fill: none
+    border: solid $border-width $core-border
+    background-color: $core-foreground
+    box-shadow: $core-shadow 0 0 20px
+    height: 210px
+    width: 300px
+    opacity: 0
